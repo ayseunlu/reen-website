@@ -1,0 +1,151 @@
+*{
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+		/*herhangi bir kutunun entrafına vermiş olduğunuz border değerini kutunun değerinden alır.*/
+		text-decoration: none;
+		}
+		body{
+			font-family: 'Montserrat', sans-serif;
+		}
+		nav, header, section, .container{
+			width: 1200px;
+			float: left;
+		}
+		main{
+			width: 1200px;
+			height: auto;
+			margin: 0 auto;
+		}
+		nav{
+			margin: 16px 0;
+		}
+		nav img{
+			float: left;
+		}
+		/*Listelerde tamanını sağa yaslamak için float right kullanıyoruz*/
+		nav ul{
+			margin: 16px 0;
+			float: right;
+			border-bottom: 1px solid rgba(80,105,133,1.00);
+		}
+		/*listedeki elemanların başındaki daireleri kaldırıyoruz*/
+		nav ul li{
+			list-style-type: none;
+		}
+		nav ul a{
+		/*metnin linkten dolayı altında yer alan çizgiyi kaldırıyorum*/
+		text-decoration: none;
+		/*elemanların yan yana gelmelerini sağlıyorum*/
+		float: left;
+		padding: 0 16px;
+		display: block;
+		/*display block burada liste elemanlarının bir kutu olmasını sağlıyor.*/
+		color: rgba(80,105,133,1.00);
+		}
+		/*metnin üzerine geldiginde kırmızı olmsını sağladık*/
+		nav ul a:hover{
+			color: rgba(2,146,195,1.00);
+		}
+		.active{
+			/*bu class ı menümüzdeki elemnaların sayfasında olduğumuzu belirtmek için kullandık İmportant öncelik bunda demek*/
+			color: rgba(2,146,195,1.00)!important;
+		}
+		header{
+			background-image:url(../images/header-bg.jpg);
+			height: 550px;
+			background-size: cover;
+			/*arka planın bulunduğu kutuya göre boyut kazanması*/
+			color: white;
+			text-align: center;
+		}
+		header h1{
+			margin-top: 140px;
+			text-transform: uppercase;
+			font-size: 64px;
+		}
+		header p{
+			margin: 42px;
+			font-size: 20px;
+		}
+		header a{
+			color: white;
+			padding: 8px 24px;
+			border: solid 1px #fff;
+			/*butonun etrafında çizgi oluşturduk*/
+			border-radius: 6px;
+			/*kutunun köşerini yuvarlatıyoruz*/
+		}
+		/*butonun üzerine geldigimizdeki hali*/
+		header a:hover{
+			background-color: white;
+			color: rgba(2,146,195,1.00);
+			transition: ease 1s;
+			/*animasyonlu bir şekilde geçişin olmasını sağlıyoruz*/
+		}
+		section{
+			padding: 64px 0;
+			text-align: center;
+			color: rgba(80,105,133,1.00);
+		}
+		section h2{
+			font-size: 36px;
+			text-transform: uppercase;
+		}
+		/*classlar nokta ile başlar ve sayfa içinde çokça kullanabiliriz. kutunun üstünden 16px boşluğu olmasını sağlıyoruz*/
+		.mt-16{
+			margin-top: 16px;
+		}
+		.width-390{
+			width: 390px;
+			float: left;
+		}
+		.mr-15{
+			margin-right: 15px;
+		}
+		article h3{
+			font-size: 24px;
+			margin: 16px 0;
+			text-transform: uppercase;
+		}
+		.bg-light{
+			background-color: #f2f5f7;
+		}
+		figure{
+			width: 592px;
+			height: auto;
+			float: left;
+		}
+		figure img{
+			width: 100%;
+			margin-top: 24px;
+			}
+		figure p{
+		    margin-top: -3px;
+			background-color: white;
+			line-height: 64px;
+			font-weight: 600;
+		}
+		#kres img{
+			float: left;
+			margin-top: 64px;
+			width: 288.75px;
+			border: 2px solid rgba(0,188,156,0.60);
+		}
+		footer{
+			width: 100%;
+			background-color: #2f4052;
+			color: white;
+			float: left;
+			padding-top: 64px;
+		}
+		footer main article{
+			width: 288.75px;
+			float: left;
+			text-align: justify;
+			/*metni her iki yüzeye yaslamak*/
+			margin-bottom: 48px;
+		}
+		footer p{
+			text-indent: 15px;
+		}
